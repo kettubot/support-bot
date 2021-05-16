@@ -39,7 +39,7 @@ const settings = {
     staffPerm: "BAN_MEMBERS",
 
     // This is the error message when a invalid number is sent
-    invalidNumber: "Invalid number! Please respond with a valid number.",
+    invalidNumber: "Invalid number! Please respond with a valid number. If you need something that is not listed above please respond with 0",
 
     // This sets the time to delete response messages. Time is in seconds.
     deleteTime: "30",
@@ -61,7 +61,7 @@ const settings = {
         // What channel is the extra support channel, where you send the message to. If you put no channel it defaults to the support (supportChannelID).
         channelID: "695188468892041318",
         // What the message is!
-        message: "Please ask your questions(s) here with as much detail possible and someone will assist you shortly! " 
+        message: "Please ask your questions(s) here with as much detail possible and someone will assist you shortly!",
         // This sets how long to wait before deleting the support response message. To have none set simply put 0. Time is in seconds.
         deleteTime: "0",
     },
