@@ -17,9 +17,9 @@ const settings = {
         // This toggles the custom status (true = enable false = disable)
         enabled: true,
         // This sets the visibly. Options are 'online', 'idle', 'dnd', and 'offline'
-        visibility: "online",
+        visibility: "idle",
         // This sets the words that go in the status
-        name: "#support",
+        name: "#support... and cute puppys",
         // This sets the game or thing its doing. As of making bots can not have custom status like users. Options are 'PLAYING', 'STREAMING', 'LISTENING', 'WATCHING', and 'COMPETING'
         type: "WATCHING"
     },
@@ -27,13 +27,13 @@ const settings = {
 
 
     // This sets the support channel, must be a channel ID
-    supportChannelID: "",
+    supportChannelID: "843596570859405354",
 
     // This is the role ID to give users if they request more support
-    supportRoleID: "",
+    supportRoleID: "843597003094884372",
 
     // This is the role ID for your staff (this allows them to use commands such as s!support @user to add or remove the user from)
-    staffRoleID: "",
+    staffRoleID: "707322848049364994",
 
     // This is the default staff perm needed to use commands like !support @user. To remove this replace it with 'null' without any quotation marks around it. Here is a list of all of the valid flags https://discord.js.org/#/docs/main/stable/class/Permissions?scrollTo=s-FLAGS
     staffPerm: "BAN_MEMBERS",
@@ -57,13 +57,13 @@ const settings = {
     // This sets the support and info.
     supportResponses: {
         // Set to true to enable and set to false to disable
-        enabled: false, 
+        enabled: true, 
         // What channel is the extra support channel, where you send the message to. If you put no channel it defaults to the support (supportChannelID).
-        channelID: "",
+        channelID: "695188468892041318",
         // What the message is!
-        message: "Please ask your questions in as much detail as you can provide and someone will assist you shortly!",
+        message: "Please ask your questions(s) here with as much detail possible and someone will assist you shortly! " 
         // This sets how long to wait before deleting the support response message. To have none set simply put 0. Time is in seconds.
-        deleteTime: "20",
+        deleteTime: "0",
     },
 
 
