@@ -47,10 +47,15 @@ const settings = {
 
     // These are the responses that are replied in the support channel. You can add as many of these as you like but they must be real numbers. Also make sure you add a comma after each item.
     responses: {
-        1: "This is the responses for the #1 thingy",
-        2: "This is yet another example responses for #2",
-        // Put 'SUPPORT' to signal that triggers adding or removing the support role from a user. This has to be a number but sometime in the future you should be able to do something else instead of a number.
-        3: "SUPPORT",
+        0: "SUPPORT",
+        1: "Click this link to add Kettu into your server! <https://kettu.cc/invite> If you are having trouble finding Kettu in your server go to server settings -> members -> search for kettu.",
+        2: "If Kettu is not responding make sure Kettu has view and send message permissions in that channel. If you can not see Kettu on the member bar he can not see into that channel! If you mention (@Kettu) Kettu he should respond. If he does make sure you are using the correct prefix. If you are still having issues please check out our status page: https://status.kettu.cc/",
+        3: "Kettu does not require any set up to start working. That being said you can change Kettu's settings either on the dashboard (https://kettu.cc/dash) or by commands. See the settings module in the help command for more information.",
+        4: "Run the command `k!socialImage` to disable socal images for your server. You can also find this setting on Kettu's dashboard: <https://kettu.cc/dash>",
+        5 "Use the preference or pref command to opt out of commands.",
+        6 "Kettu currently does not have reaction roles. Reaction roles or something similaris planned sometime after v4. Until then, you can use Kettu's self role commands `k!selfrole` and `k!setselfrole`.",
+        7 "To change Kettu's prefix either use the `prefix` command or alternatively change it on Kettu's dashboard: https://kettu.cc/dash You can also just mention (@Kettu) as a prefix! ",
+        8 "If you are in 'The Fox Den' then you are probably mistaking their private Kettu bot for this Kettu. Currently Kettu does not have a way to do rules like that, however with a quick google or ddg search you can easily find webhook embeds to use instead. ",
     },
 
 
