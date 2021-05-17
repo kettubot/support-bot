@@ -68,7 +68,7 @@ const settings = {
         // What the message is!
         message: "Please ask your questions(s) here with as much detail possible and someone will assist you shortly!",
         // This sets how long to wait before deleting the support response message. To have none set simply put 0. Time is in seconds.
-        deleteTime: "0",
+        deleteTime: 0,
     },
 
 
