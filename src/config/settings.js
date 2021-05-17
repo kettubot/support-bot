@@ -52,10 +52,10 @@ const settings = {
         2: "If Kettu is not responding make sure Kettu has view and send message permissions in that channel. If you can not see Kettu on the member bar he can not see into that channel! If you mention (@Kettu) Kettu he should respond. If he does make sure you are using the correct prefix. If you are still having issues please check out our status page: https://status.kettu.cc/",
         3: "Kettu does not require any set up to start working. That being said you can change Kettu's settings either on the dashboard (https://kettu.cc/dash) or by commands. See the settings module in the help command for more information.",
         4: "Run the command `k!socialImage` to disable socal images for your server. You can also find this setting on Kettu's dashboard: <https://kettu.cc/dash>",
-        5 "Use the preference or pref command to opt out of commands.",
-        6 "Kettu currently does not have reaction roles. Reaction roles or something similaris planned sometime after v4. Until then, you can use Kettu's self role commands `k!selfrole` and `k!setselfrole`.",
-        7 "To change Kettu's prefix either use the `prefix` command or alternatively change it on Kettu's dashboard: https://kettu.cc/dash You can also just mention (@Kettu) as a prefix! ",
-        8 "If you are in 'The Fox Den' then you are probably mistaking their private Kettu bot for this Kettu. Currently Kettu does not have a way to do rules like that, however with a quick google or ddg search you can easily find webhook embeds to use instead. ",
+        5: "Use the preference or pref command to opt out of commands.",
+        6: "Kettu currently does not have reaction roles. Reaction roles or something similaris planned sometime after v4. Until then, you can use Kettu's self role commands `k!selfrole` and `k!setselfrole`.",
+        7: "To change Kettu's prefix either use the `prefix` command or alternatively change it on Kettu's dashboard: https://kettu.cc/dash You can also just mention (@Kettu) as a prefix! ",
+        8: "If you are in 'The Fox Den' then you are probably mistaking their private Kettu bot for this Kettu. Currently Kettu does not have a way to do rules like that, however with a quick google or ddg search you can easily find webhook embeds to use instead. ",
     },
 
 
