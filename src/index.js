@@ -10,6 +10,7 @@ const { promisify } = require('util')
 
 // Define our files 
 const config = require('./config/config.js');
+const pack = require('../package.json');
 const settings = require('./config/settings.js');
 const token = require('./config/token.json');
 
@@ -78,11 +79,13 @@ client.on('message', async msg => {
 	if (!msg.content.startsWith(settings.prefix) || msg.author.bot) return await runSupport();
 
     // Defines command if it exists
-	const command = args.shift().toLowerCase();
+	const commandName = args.shift().toLowerCase();
 
 
     // If command doesn't exist run support func and return.
-	if (!client.commands.has(command)) return await runSupport();
+	if (!client.commands.has(commandName)) return await runSupport();
+
+    const command = client.commands.get(commandName);
 
 
     // If bot lacks send message perms return and console log a warning
@@ -96,7 +99,7 @@ client.on('message', async msg => {
 
 
     // If the command needs args and none are provided
-    if (command.args && args.length) return await msg.channel.send(`This command requires the arguments **${command.showArgs}** in order to be ran!`)
+    if (command.args && !args.length) return await msg.channel.send(`This command requires the arguments **${command.showArgs}** in order to be ran!`)
 
 
     // This is an object that we pass a bunch of data into the command
@@ -106,13 +109,14 @@ client.on('message', async msg => {
         embedPerms: embedPerms,
         config: config,
         settings: settings,
+        pack: pack,
     }
 
 
 
     // This runs the command
 	try {
-		client.commands.get(command).execute(msg, args, stuff);
+		command.execute(msg, args, stuff);
         // If any error try to catch it
 	} catch (err) {
 		config.log.error(require("util").inspect(err))
